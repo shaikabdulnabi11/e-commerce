@@ -102,34 +102,75 @@ body {
 /* Home Page*/
 
 #hero {
-    background-image: url("img/hero.4.png");
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
-    flex-direction: coloumn;
-    align-items: flex-start;
-    justify-content: center;
+    background: linear-gradient(135deg, #87CEEB, #FFD1DC);
+    padding: 100px 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-#hero h4 {
-    padding-bottom: 15px;
+.hero-content h4 {
+    font-size: 20px;
+    color: #ff5e78;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-#hero h1 {
-    color: #088178;
+.hero-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #222;
+    margin: 10px 0;
 }
 
-#hero button {
-    background-image: url("img/button.png");
-    background-color: transparent;
-    color: #088178;
-    border: 0;
-    padding: 14px 80px 14px 65px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 15px;
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #222;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 15px 0 25px;
+    color: #555;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #ff5e78;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #e04c64;
+    transform: scale(1.05);
+}
+
+.hero-highlights {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.hero-highlights ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.hero-highlights li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 #feature {
@@ -165,4 +206,73 @@ body {
     border-radius: 4px;
     color: #fddde4;
 
+}
+
+/* Container for all product cards */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+/* Individual product card */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Headings and pricing */
+.product-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Add to cart button */
+.product-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #181C14;
+    color: #ECDFCC;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.product-card button:hover {
+    background-color: #3C3D37;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
 }

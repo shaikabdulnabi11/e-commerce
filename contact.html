@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | AK Shopping Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <style>
+        /* Logo Resizing */
+        .logo {
+            width: 120px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 80px 20px;
+            background: linear-gradient(to right, #87CEEB, #FFD1DC);
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+        }
+
+        #contact h2 {
+            text-align: center;
+            font-size: 36px;
+            color: #fff;
+            background: linear-gradient(90deg, #ff758c, #87CEEB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 40px;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        #contact label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 14px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        #contact textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        #contact button {
+            margin-top: 24px;
+            padding: 12px 20px;
+            width: 100%;
+            background: linear-gradient(to right, #ff758c, #87CEEB);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        #contact button:hover {
+            background: linear-gradient(to right, #87CEEB, #ff758c);
+            transform: scale(1.03);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            #contact h2 {
+                font-size: 28px;
+            }
+
+            #contact form {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <section id="header">
+        <a href="#"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdEbE5lELAZetqCLxByAxpstQdw8fxsGxGA&s"
+                class="logo" alt="AK"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Message Subject" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
